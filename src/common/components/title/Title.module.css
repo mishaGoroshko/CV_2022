@@ -1,0 +1,25 @@
+.title{
+    background-color: lavender;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.title h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 0;
+    font-size: 36px;
+}
+
+.title::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    background: red;
+    height: 1px;
+    width: 100px;
+    margin-top: 15px;
+
+}

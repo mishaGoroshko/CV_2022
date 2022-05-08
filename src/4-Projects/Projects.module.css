@@ -1,5 +1,4 @@
 .projectsBlock{
-    min-height: 60vh;
     background-color: #b6ffb0;
     display: flex;
     justify-content: center;
@@ -12,15 +11,17 @@
     justify-content: flex-start;
 }
 
-.title{
-    align-items: start;
-    background-color: lavender;
-}
 
 .projects {
     width: 100%;
-    border: 1px solid;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+@media screen and (max-width: 671px) {
+    .projects {
+        justify-content: center;
+    }
+
 }

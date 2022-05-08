@@ -8,11 +8,11 @@ export const Contacts = () => {
             <div className={`${sContainer.container} ${s.contactsContainer}`}>
                 <h2 className={s.title}>My contacts</h2>
                 <form className={s.formBlock}>
-                    <input />
-                    <input />
-                    <textarea />
+                    <input/>
+                    <input/>
+                    <textarea/>
                 </form>
-                <button>Send</button>
+                <button type={'submit'}>Send</button>
             </div>
         </div>
     );
