@@ -1,19 +1,63 @@
+@import '../common/styles/sass/variables.scss';
+
+
 .mainBlock {
     height: 100vh;
-    background-color: #d5d5d5;
+    background-image: url('D:\CV\CV_2022\src\assets\image\main-back.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.mainContainer {
+
+}
+
 .text {
     width: 324px;
-    background-color: lavender;
+    /*background-color: lavender;*/
+    font-family: 'Jost', sans-serif;
 }
+
+.text h3 {
+    color: #f75023 !important;;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+.text h1 {
+    color: #fff;
+
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+.text p {
+    color: #fff;
+
+}
+
+.greenText {
+    color: #1cbe59 !important;
+}
+
+.yellowText {
+    color: #f0c45c !important;
+}
+
 
 .photo {
     width: 324px;
     height: 300px;
     background-color: lavender;
 
+}
+
+@media screen and (max-width: 723px) {
+    .mainContainer {
+        justify-content: center;
+    }
 }

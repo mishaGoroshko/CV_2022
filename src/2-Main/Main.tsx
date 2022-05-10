@@ -5,11 +5,13 @@ import sContainer from '../common/styles/Conteiner.module.css'
 export const Main = () => {
     return (
         <div className={s.mainBlock}>
-            <div className={sContainer.container}>
+            <div className={`${sContainer.container} ${s.mainContainer}`}>
                 <div className={s.text}>
-                    <span>Hello</span>
-                    <h1>I am Miha</h1>
-                    <p>frontend developer</p>
+                    <h3>Hello, I'm</h3>
+                    <h1>Misha Goroshko</h1>
+                    <p>A <span className={s.greenText}>Frontend Developer</span> From <span
+                        className={s.yellowText}>Minsk&Tashkent</span>
+                    </p>
                 </div>
                 <div className={s.photo}>
 
