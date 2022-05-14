@@ -6,16 +6,13 @@ import {Skills} from './3-Skills/Skills';
 import {Projects} from './4-Projects/Projects';
 import {Contacts} from './5-Contacts/Contacts';
 import {Footer} from './6-Footer/Footer';
-import {Route, Routes} from 'react-router-dom';
 
 function App() {
     return (
         <div className="App">
             <Header/>
-            <Routes>
-                <Route path={'/main'} element={<Main/>}/>
-                <Route path={'/skills'} element={<Skills/>}/>
-            </Routes>
+            <Main/>
+            <Skills/>
             <Projects/>
             <Contacts/>
             <Footer/>

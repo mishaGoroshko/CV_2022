@@ -18,13 +18,15 @@
 }
 
 .formBlock {
+    width: 300px;
     display: flex;
     flex-direction: column;
     border: 1px solid;
     gap: 5px;
 }
 
-/*.formBlock input,*/
-/*.formBlock textarea {*/
-/*    width: 100%;*/
-/*}*/
+@media screen and (max-width: 335px) {
+    .formBlock {
+        width: 100%;
+    }
+}

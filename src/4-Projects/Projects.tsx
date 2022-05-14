@@ -10,7 +10,8 @@ export const Projects = () => {
         <div className={s.projectsBlock}>
             <div className={`${sContainer.container} ${s.projectsContainer}`}>
 
-                <Title text={'my projects'}/>
+                <Title title1={'Portfolio'}
+                title2={'My Amazing Works'}/>
 
                 <div className={s.projects}>
                     <Project title={'To Do List'} desc={'Simple tool to organise everything'}/>

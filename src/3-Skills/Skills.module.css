@@ -25,3 +25,16 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
+@media screen and (max-width: 672px) {
+    .skills {
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 449px) {
+    .skills {
+        justify-content: center;
+    }
+}
