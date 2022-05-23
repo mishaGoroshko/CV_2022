@@ -8,7 +8,7 @@ export const Skills = () => {
     return (
         <div className={s.skillsBlock}>
             <div className={`${sContainer.container} ${s.skillsContainer}`}>
-                <Title title1={'Develop is Life'}
+                <Title title1={'develop is life'}
                 title2={'I Develop Skills Regularly to Keep Me Update'}/>
                 <div className={s.skills}>
                     <Skill title='HTML' desc={'язык гипертекстовой разметки'}/>

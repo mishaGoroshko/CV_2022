@@ -2,8 +2,9 @@
     width: 300px;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: start;
-    background-color: lightgreen;
+    background-color: #383b42;
 }
 
 .image {
@@ -25,8 +26,14 @@
 .title ,.desc{
     margin: 5px 5px 0 5px;
     padding: 0 5px;
-    background-color: lightgray;
+    color: #e5e5e5;
+    font-family: jost, sans-serif;
+    font-weight: 500;
 
+}
+
+.title {
+    color: #f75023 !important;;
 }
 
 /*.desc {*/

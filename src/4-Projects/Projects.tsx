@@ -5,7 +5,15 @@ import {Project} from './Project/Project';
 import {Title} from '../common/components/title/Title';
 
 
+
 export const Projects = () => {
+    const socialNetwork = {
+        color: 'blue',
+        backgroundImage: 'url(' + imgUrl + ')',
+    };
+
+
+
     return (
         <div className={s.projectsBlock}>
             <div className={`${sContainer.container} ${s.projectsContainer}`}>

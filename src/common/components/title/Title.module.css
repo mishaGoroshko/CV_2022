@@ -1,33 +1,41 @@
-.title{
+.title {
     /*background-color: lavender;*/
     margin-bottom: 30px;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
 .title h3 {
     color: #f75023 !important;;
+    font-family: jost, sans-serif;
     font-weight: 500;
-    line-height: 1.3;
+    line-height: 30px;
+    word-wrap: break-word;
+    font-size: 22px;
+    text-transform: capitalize;
+
 }
 
 .title h2 {
     color: #fff;
-
+    font-family: jost, sans-serif;
     font-weight: 500;
-    line-height: 1.3;
+    line-height: 1.25;
+    font-size: 38px;
+    text-transform: capitalize;
+
 }
 
-.h3::after {
+.title h2::after {
     content: '';
     position: absolute;
     left: 50%;
     transform: translate(-50%, 50%);
-    background: #1cbe59 !important;
+    background: #f0c45c !important;
     height: 1px;
     width: 100px;
-    margin-top: 15px;
-
+    margin-top: 55px;
 }

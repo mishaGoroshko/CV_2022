@@ -8,7 +8,7 @@ export const Main = () => {
             <div className={`${sContainer.container} ${s.mainContainer}`}>
                 <div className={s.text}>
                     <h3>Hello, I'm</h3>
-                    <h1>Misha Haroshko</h1>
+                    <h2>Misha Haroshko</h2>
                     <p>A <span className={s.greenText}>Frontend Developer</span> From <span
                         className={s.yellowText}>Minsk&Tashkent</span>
                     </p>
