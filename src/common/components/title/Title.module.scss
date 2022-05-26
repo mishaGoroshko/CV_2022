@@ -1,0 +1,46 @@
+@import '../../styles/sass/mixins';
+
+.title {
+  margin-bottom: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h3 {
+    color: #f75023 !important;;
+    font-family: jost, sans-serif;
+    font-weight: 500;
+    line-height: 30px;
+    word-wrap: break-word;
+    font-size: 22px;
+    text-transform: capitalize;
+  }
+
+  h2 {
+    //color: #fff;
+    //font-family: jost, sans-serif;
+    //font-weight: 500;
+    //line-height: 1.25;
+    //font-size: 38px;
+    //text-transform: capitalize;
+    @include text(#fff,500,1.25,38px,capitalize);
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      background: #f0c45c !important;
+      height: 1px;
+      width: 100px;
+      margin-top: 55px;
+    }
+  }
+}
+
+
+
+
+
+

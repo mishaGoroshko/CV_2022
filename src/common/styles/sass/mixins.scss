@@ -1,8 +1,12 @@
 @import '../sass/variables';
 
 
-@mixin text($font-family) {
-  font-family: $font-family;
-  color: $primaryColor;
-
+@mixin text($color, $fontWeight,
+ $lineHeight, $fontSize, $textTransform) {
+  color: $color;
+  font-family: jost, sans-serif;
+  font-weight: $fontWeight;
+  line-height: $lineHeight;
+  font-size: $fontSize;
+  text-transform: $textTransform;
 }
