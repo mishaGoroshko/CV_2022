@@ -9,12 +9,10 @@ import todo from '../assets/image/todolist.png'
 
 export const Projects = () => {
     const socialNetwork = {
-        color: 'blue',
         backgroundImage: `url(${socNet})`,
     };
 
     const todolist = {
-        color: 'blue',
         backgroundImage: `url(${todo})`,
     };
 

@@ -61,9 +61,12 @@
 
 
 .photo {
-    width: 250px;
-    height: 250px;
-    background-color: lavender;
+    width: 470px;
+    height: 420px;
+    background-color: rgba(255, 255, 255, 0);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 
 }
 

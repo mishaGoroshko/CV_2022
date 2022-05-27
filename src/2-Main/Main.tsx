@@ -1,8 +1,13 @@
 import React from 'react';
 import s from './Main.module.css'
 import sContainer from '../common/styles/Conteiner.module.css'
+import wolf from '../assets/image/wolf.png';
 
 export const Main = () => {
+
+    const wolfAva = {
+        backgroundImage: `url(${wolf})`,
+    };
     return (
         <div className={s.mainBlock}>
             <div className={`${sContainer.container} ${s.mainContainer}`}>
@@ -13,7 +18,7 @@ export const Main = () => {
                         className={s.yellowText}>Minsk&Tashkent</span>
                     </p>
                 </div>
-                <div className={s.photo}>
+                <div style={wolfAva} className={s.photo}>
 
                 </div>
             </div>

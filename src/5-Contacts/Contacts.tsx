@@ -10,11 +10,11 @@ export const Contacts = () => {
                 <Title title1={'Contact Me'}
                        title2={'I Will Be Glad To Hear From You'}/>
                 <form className={s.formBlock}>
-                    <input/>
-                    <input/>
-                    <textarea/>
+                    <input placeholder={'name'}/>
+                    <input placeholder={'email'}/>
+                    <textarea placeholder={'write your message here'}/>
+                    <button type={'submit'}>send</button>
                 </form>
-                <button type={'submit'}>Send</button>
             </div>
         </div>
     );

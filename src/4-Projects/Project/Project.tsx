@@ -4,10 +4,10 @@ import s from './Project.module.scss'
 type ProjectType = {
     title: string
     desc: string
-    style: { color: string, backgroundImage: string }
+    style: { backgroundImage: string }
 }
 
-export const Project:React.FC<ProjectType> = ({title,desc, style}) => {
+export const Project: React.FC<ProjectType> = ({title, desc, style}) => {
     return (
         <div className={s.project}>
             <div className={s.image} style={style}>
