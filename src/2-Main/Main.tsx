@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './Main.module.css'
 import sContainer from '../common/styles/Conteiner.module.css'
-import wolf from '../assets/image/wolf.png';
+import wolf from '../assets/image/nophotoshop29-800x532.png';
 
 export const Main = () => {
 

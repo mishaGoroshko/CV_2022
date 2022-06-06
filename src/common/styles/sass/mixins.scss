@@ -10,3 +10,27 @@
   font-size: $fontSize;
   text-transform: $textTransform;
 }
+
+@mixin container() {
+  width: 90%;
+  height: 90%;
+  margin: 0 auto;
+  border: 1px solid;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+@mixin flex($flexDirection, $justifyContent, $alignItems, $flexWrap) {
+  display: flex;
+  flex-direction: $flexDirection;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+  flex-wrap: $flexWrap;
+}
+
+@mixin bgSettings() {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
