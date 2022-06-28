@@ -2,48 +2,83 @@
 @import '../../common/styles/sass/mixins';
 
 .project {
-  width: 450px;
+  width: 350px;
   display: flex;
   flex-direction: column;
   background-color: $dgSecondary;
 
-  .image {
+  .imageBlock {
     height: 250px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    @include bgSettings();
-    //background-position: center;
-    //background-size: cover;
-    //background-repeat: no-repeat;
-    position: relative;
+    width: 100%;
+    overflow: hidden;
 
-    &::before {
-      position: absolute;
-      content: '';
-      background-color: black;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      opacity: 0.2;
-    }
-
-    .button {
+    .image {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include bgSettings();
       position: relative;
-      padding: 10px 20px;
-      background-color: $dgPrimary;
-      color: #e5e5e5;
-      font-family: jost, sans-serif;
-      font-weight: 300;
-      line-height: 1.25;
-      font-size: 20px;
-      border: none;
-      z-index: 1;
+      transition: 0.8s;
 
       &:hover {
-        background-color: #383b42;
+        transform: scale(1.1);
       }
+
+      &:hover::before {
+        opacity: 0;
+      }
+
+      &::before {
+        position: absolute;
+        content: '';
+        background-color: black;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0.2;
+        transition: 0.8s;
+      }
+
+      .button {
+        width: min-content;
+        padding: 5px 20px;
+        @include text($textColor, 500, 1.25, 20px, capitalize);
+        background-color: transparent;
+        border: 2px solid $primaryColor;
+        border-radius: 50px;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        transition: all .3s ease;
+        z-index: 1;
+
+        &:hover {
+          color: $textColor;
+        }
+
+        &:active {
+          top: -2px;
+        }
+
+        &:hover::before {
+          height: 31px;
+        }
+
+        &::before {
+          position: absolute;
+          content: "";
+          z-index: -1;
+          background-color: $primaryColor;
+          left: -5px;
+          right: -5px;
+          bottom: 2px;
+          height: 10%;
+          transition: all .3s ease;
+        }
+      }
+
     }
   }
 

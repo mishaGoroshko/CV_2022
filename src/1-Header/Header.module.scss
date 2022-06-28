@@ -1,0 +1,17 @@
+@import '../common/styles/sass/variables.scss';
+
+.header {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    position: fixed;
+    z-index: 100;
+    transition: 1s;
+}
+.isScrolling {
+    background-color: $dgPrimary;
+    box-shadow: rgb(255, 255, 255) 0px 4px 4px -5px;
+}

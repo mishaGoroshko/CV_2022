@@ -1,15 +1,48 @@
 import React from 'react';
-import {Navigate, NavLink} from 'react-router-dom';
-import s from './Nav.module.css'
+import {Link} from 'react-scroll';
+import s from './Nav.module.scss'
 
 export const Nav = () => {
+
     return (
         <div className={s.nav}>
-            <NavLink to='/main'>main</NavLink>
-            <NavLink to='/skills'>skills</NavLink>
-            {/*<Navigate to={}/>*/}
-            <a href="">projects</a>
-            <a href="">contacts</a>
+            <Link
+                className={s.link}
+                activeClass={s.active}
+                to="main"
+                spy={true}
+                smooth={true}
+                offset={-59}
+                duration={500}
+            >main</Link>
+            <Link
+                className={s.link}
+                activeClass={s.active}
+                to="skills"
+                spy={true}
+                smooth={true}
+                offset={-59}
+                duration={500}
+            >skills</Link>
+            <Link
+                className={s.link}
+                activeClass={s.active}
+                to="projects"
+                spy={true}
+                smooth={true}
+                offset={-59}
+                duration={500}
+            >projects</Link>
+            <Link
+                className={s.link}
+                activeClass={s.active}
+                to="contacts"
+                spy={true}
+                smooth={true}
+                offset={-59}
+                duration={500}
+            >contacts</Link>
+
         </div>
     );
 }

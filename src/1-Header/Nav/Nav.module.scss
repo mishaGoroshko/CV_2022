@@ -1,0 +1,24 @@
+@import '../../common/styles/sass/mixins';
+
+
+.nav {
+  margin-right: 10%;
+  width: 350px;
+  @include flex(row, space-around, center, wrap);
+  .link {
+    color: $textColor;
+    font-family: jost, sans-serif;
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 20px;
+    text-transform: capitalize;
+    &:hover {
+      color: $primaryColor;
+    }
+  }
+
+  .active {
+    color: $primaryColor;
+  }
+}
+

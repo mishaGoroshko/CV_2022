@@ -1,14 +1,14 @@
 @import '../../styles/sass/mixins';
 
 .title {
-  margin-bottom: 30px;
+  margin: 30px 0;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   h3 {
-    color: #f75023 !important;;
+    color: $primaryColor;
     font-family: jost, sans-serif;
     font-weight: 500;
     line-height: 30px;
@@ -24,14 +24,14 @@
     //line-height: 1.25;
     //font-size: 38px;
     //text-transform: capitalize;
-    @include text(#fff,500,1.25,38px,capitalize);
+    @include text($textColor,500,1.25,38px,capitalize);
 
     &::after {
       content: '';
       position: absolute;
       left: 50%;
       transform: translate(-50%, 50%);
-      background: #f0c45c !important;
+      background: $thirdColor;
       height: 1px;
       width: 100px;
       margin-top: 55px;

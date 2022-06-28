@@ -1,0 +1,49 @@
+@import "./../common/styles/sass/mixins";
+
+.contactsBlock {
+  min-height: 20vh;
+  background-color: #2b2d33;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .contactsContainer {
+    margin-top: 50px;
+    @include flex(column, space-between, center, wrap);
+    gap: 10px;
+
+    .iconsBlock {
+      display: flex;
+      gap: 30px;
+
+      .icon {
+        height: 30px;
+        width: 30px;
+        background-color: transparent;
+        cursor: pointer;
+        transition: 0.5s;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+
+      .github {
+        background-color: white;
+      }
+    }
+
+    .info {
+      color: #f0c45c !important;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+

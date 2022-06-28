@@ -1,0 +1,351 @@
+@import '../common/styles/sass/mixins';
+
+.skillsBlock {
+  min-height: 60vh;
+  background-color: $dgPrimary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .skillsContainer {
+    width: 80%;
+    height: 90%;
+    @include flex(column, flex-start, center, wrap);
+
+    .title {
+      background-color: $textColor;
+    }
+
+    .container {
+      width: 100%;
+      padding: 10px;
+      @include flex(row, center, flex-start, wrap);
+      gap: 15px;
+      overflow: hidden;
+      //@media screen and (max-width: 672px) {
+      //  @include flex(column, flex-start, center, wrap);
+      //}
+
+      .col {
+        width: 220px;
+        margin: 0 5%;
+        position: relative;
+        float: left;
+        font-size: 12px;
+        line-height: 2em;
+        padding: 5% 0;
+
+        > h2 {
+          width: max-content;
+          font-size: 2.7em;
+          font-weight: normal;
+          padding: 10px 10px 16px 10px;
+          margin: 0 0 30px;
+          text-align: center;
+          background: #000;
+          border-radius: 2px;
+
+          text-transform: capitalize;
+        }
+
+        .title {
+          opacity: 1;
+          animation: title 2s ease-out;
+          @keyframes title {
+            0% {
+              opacity: 0.3;
+            }
+            100% {
+              opacity: 1;
+            }
+          }
+        }
+
+
+        .softSkills {
+          border: 1px solid $secondColor;
+          box-shadow: 0px 0px 50px -8px $secondColor;
+          color: #2187e7;
+          text-shadow: 1px 1px 5px #000, 0 0 10px $secondColor, 0 0 20px $secondColor;
+        }
+
+        .languages {
+          border: 1px solid $thirdColor;
+          box-shadow: 0px 0px 50px -8px $thirdColor;
+          color: #9ACD32;
+          text-shadow: 1px 1px 5px #000, 0 0 10px $thirdColor, 0 0 20px $thirdColor;
+        }
+
+        .hardSkills {
+          border: 1px solid $primaryColor;
+          box-shadow: 0px 0px 50px -8px $primaryColor;
+          color: #FF4500;
+          text-shadow: 1px 1px 5px #000, 0 0 10px $primaryColor, 0 0 20px $primaryColor;
+        }
+
+        .skill {
+          list-style: none;
+          padding-top: 30px;
+
+          li {
+            margin-bottom: 50px;
+            background: #030303;
+            height: 6px;
+            border-radius: 3px;
+            border-left: 1px solid #111;
+            border-top: 1px solid #111;
+            border-right: 1px solid #333;
+            border-bottom: 1px solid #333;
+
+            .blueLine {
+              height: 4px;
+              background: $secondColor;
+              position: absolute;
+              box-shadow: 0px 0px 10px 1px rgba(0, 198, 255, 0.6);
+            }
+
+            .greenLine {
+              height: 4px;
+              background: $thirdColor;
+              position: absolute;
+              box-shadow: 0px 0px 10px 1px rgba(173, 255, 47, 0.4);
+            }
+
+            .redLine {
+              height: 4px;
+              background: $primaryColor;
+              position: absolute;
+              box-shadow: 0px 0px 10px 1px rgba(255, 69, 0, 0.4);
+            }
+
+            // hard skills
+
+            .react {
+              width: 90%;
+              animation: react 2s ease-out;
+              @keyframes react {
+                0% {
+                  width: 0px;
+                }
+                100% {
+                  width: 90%;
+                }
+              }
+            }
+
+            .redux {
+              width: 95%;
+              animation: redux 2s ease-out;
+              @keyframes redux {
+                0% {
+                  width: 0px;
+                }
+                100% {
+                  width: 95%;
+                }
+              }
+            }
+
+            .reduxToolkit {
+              width: 45%;
+              animation: reduxToolkit 2s ease-out;
+              @keyframes reduxToolkit {
+                0% {
+                  width: 0px;
+                }
+                100% {
+                  width: 45%;
+                }
+              }
+            }
+
+            .git {
+              width: 80%;
+              animation: git 2s ease-out;
+              @keyframes git {
+                0% {
+                  width: 0px;
+                }
+                100% {
+                  width: 80%;
+                }
+              }
+            }
+
+            .restApi {
+              width: 70%;
+              animation: restApi 2s ease-out;
+              @keyframes restApi {
+                0% {
+                  width: 0px;
+                }
+                100% {
+                  width: 70%;
+                }
+              }
+            }
+
+            .materialUI {
+              width: 30%;
+              animation: materialUI 2s ease-out;
+              @keyframes materialUI {
+                0% {
+                  width: 0px;
+                }
+                100% {
+                  width: 30%;
+                }
+              }
+            }
+
+            // languages
+
+            .javascript {
+              width: 80%;
+              animation: javascript 2s ease-out;
+              @keyframes javascript {
+                0% {
+                  width: 0px;
+                }
+                100% {
+                  width: 80%;
+                }
+              }
+            }
+
+            .typescript {
+              width: 85%;
+              animation: typescript 2s ease-out;
+              @keyframes typescript {
+                0% {
+                  width: 0px;
+                }
+                100% {
+                  width: 85%;
+                }
+              }
+            }
+
+            .html {
+              width: 65%;
+              animation: html 2s ease-out;
+              @keyframes html {
+                0% {
+                  width: 0px;
+                }
+                100% {
+                  width: 65%;
+                }
+              }
+            }
+
+            .css {
+              width: 60%;
+              animation: css 2s ease-out;
+              @keyframes css {
+                0% {
+                  width: 0px;
+                }
+                100% {
+                  width: 60%;
+                }
+              }
+            }
+
+            .english {
+              width: 80%;
+              animation: english 2s ease-out;
+              @keyframes english {
+                0% {
+                  width: 0px;
+                }
+                100% {
+                  width: 80%;
+                }
+              }
+            }
+
+
+            // soft skills
+
+            .communication {
+              width: 95%;
+              animation: communication 2s ease-out;
+              @keyframes communication {
+                0% {
+                  width: 0px;
+                }
+                100% {
+                  width: 95%;
+                }
+              }
+            }
+
+            .problemSolving {
+              width: 90%;
+              animation: problemSolving 2s ease-out;
+              @keyframes problemSolving {
+                0% {
+                  width: 0px;
+                }
+                100% {
+                  width: 90%;
+                }
+              }
+
+            }
+
+            .workEthic {
+              width: 95%;
+              animation: workEthic 2s ease-out;
+              @keyframes workEthic {
+                0% {
+                  width: 0px;
+                }
+                100% {
+                  width: 95%;
+                }
+              }
+            }
+
+            .creativity {
+              width: 60%;
+              animation: creativity 2s ease-out;
+              @keyframes creativity {
+                0% {
+                  width: 0px;
+                }
+                100% {
+                  width: 60%;
+                }
+              }
+            }
+
+            .organizationSkills {
+              width: 80%;
+              animation: organizationSkills 2s ease-out;
+              @keyframes organizationSkills {
+                0% {
+                  width: 0px;
+                }
+                100% {
+                  width: 80%;
+                }
+              }
+            }
+
+            em {
+              position: relative;
+              font-style: normal;
+              font-size: 18px;
+              text-align: center;
+              color: $textColor;
+              top: -28px;
+              text-transform: capitalize;;
+            }
+          }
+        }
+      }
+    }
+  }
+}

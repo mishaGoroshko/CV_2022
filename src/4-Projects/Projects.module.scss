@@ -1,0 +1,29 @@
+@import '../common/styles/sass/mixins';
+
+.projectsBlock {
+  background-color: #2b2d33;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .projectsContainer {
+    width: 80%;
+    height: 90%;
+    @include flex(column, flex-start, center, wrap);
+
+    .projects {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+
+@media screen and (max-width: 671px) {
+  .projects {
+    justify-content: center;
+  }
+}

@@ -11,16 +11,6 @@
   text-transform: $textTransform;
 }
 
-@mixin container() {
-  width: 90%;
-  height: 90%;
-  margin: 0 auto;
-  border: 1px solid;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
 @mixin flex($flexDirection, $justifyContent, $alignItems, $flexWrap) {
   display: flex;
   flex-direction: $flexDirection;
