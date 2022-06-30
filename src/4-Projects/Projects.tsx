@@ -32,7 +32,16 @@ export const Projects = () => {
                     <Fade left>
                         <Project title={'Memory cards'}
                                  style={memoryCard}
-                                 desc={`Command project with my colleagues. 
+                                 desc={`Project Description: huge platform which helps people training memory 
+
+Positions: Software Engineer 
+
+Overall Team Size: 1 PM, 1 Back-end developer, 4 Front-end-developer
+
+Responsibilities: Functional development
+
+Tools & Technologies: React, Redux, TypeScript, HTML, CSS, Figma, Git, Rest API
+
 
 Test account
 email: qwerty1044@mail.ru
@@ -42,14 +51,36 @@ password: 12345678`}
                     <Fade bottom>
                         <Project title={'To Do List'}
                                  style={todolist}
-                                 desc={'simple tool to organise everything'}
+                                 desc={`Project Description: simple tool to organise everything
+
+Positions: Junior Software Engineer 
+
+Overall Team Size: 1 PM, 1 developer
+
+Responsibilities: Functional development
+
+Tools & Technologies: React, Redux Toolkit, TypeScript, Unit Tests, StoryBook, HTML, CSS, Git, Rest API
+
+
+Test account
+email: free@samuraijs.com
+password: free`}
                                  url='https://mihagp800.github.io/todoList/'/>
                     </Fade>
 
                     <Fade right>
                         <Project title={'Social Network'}
                                  style={socialNetwork}
-                                 desc={`an online platform which people use to build social networks
+                                 desc={`Project Description: an online platform which people use to build social networks
+
+Positions: Junior Software Engineer 
+
+Overall Team Size: 1 PM, 1 developer
+
+Responsibilities: Functional development
+
+Tools & Technologies: React, Redux, TypeScript, HTML, CSS, Git, Rest API
+
 
 Test account
 email: free@samuraijs.com
