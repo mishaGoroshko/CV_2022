@@ -1,6 +1,5 @@
 import React, {useEffect, useRef, useState} from 'react';
 import s from './Skills.module.scss'
-import sContainer from '../common/styles/Conteiner.module.css';
 import {Title} from '../common/components/title/Title';
 
 export const Skills = () => {
@@ -82,7 +81,7 @@ export const Skills = () => {
                                 className={`${s.greenLine} ${isLanguages && s.css}`}></span><em>CSS/SCSS/SASS</em>
                             </li>
                             <li><span
-                                className={`${s.greenLine} ${isLanguages && s.english}`}></span><em>english(A1)</em>
+                                className={`${s.greenLine} ${isLanguages && s.english}`}></span><em>english(A2)</em>
                             </li>
                         </ul>
                     </div>

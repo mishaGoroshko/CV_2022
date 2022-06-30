@@ -74,10 +74,6 @@
     .parallaxEffect {
       transform-style: preserve-3d;
       position: relative;
-      //&:hover {
-        //border: 2px solid $primaryColor;
-        //background-color: $textColor;
-      //}
 
       .borderPhoto {
         width: 440px;
@@ -87,10 +83,10 @@
 
       .photo {
         width: 470px;
-        height: 420px;
+        height: 500px;
         background-color: rgba(255, 255, 255, 0);
-        background-position: center;
-        background-size: cover;
+        background-position: 40% 100%;
+        background-size: contain;
         background-repeat: no-repeat;
         transform: translateZ(80px);
         position: absolute;
@@ -157,14 +153,14 @@
           border-radius: 15px;
           position: absolute;
           left: 150px;
-          bottom: -20px;
+          bottom: -10px;
           animation: ts 3s linear 0s infinite alternate;
           @keyframes ts {
             0% {
-              bottom: -10px;
+              bottom: 0;
             }
             100% {
-              bottom: -30px;
+              bottom: -20px;
             }
           }
         }

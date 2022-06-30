@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Main.module.scss'
-import wolf from '../assets/image/nophotoshop29-800x532.png';
+import wolf from '../assets/image/ava.png';
 import Particles from 'react-tsparticles';
 import {loadFull} from 'tsparticles';
 import {particlesOptions} from '../assets/Particles/ParticlesOptions';
@@ -9,7 +9,6 @@ import ReactTypingEffect from 'react-typing-effect';
 import Tilt from 'react-parallax-tilt';
 import {ReactComponent as ReactIcon} from '../assets/icons/react.svg';
 import {ReactComponent as ReduxIcon} from '../assets/icons/redux.svg';
-import CssIcon from '../assets/icons/css.svg';
 import ts from '../assets/icons/ts.svg';
 
 export const Main = React.memo(

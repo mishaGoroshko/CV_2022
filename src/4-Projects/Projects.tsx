@@ -32,7 +32,11 @@ export const Projects = () => {
                     <Fade left>
                         <Project title={'Memory cards'}
                                  style={memoryCard}
-                                 desc={'command project with my colleagues'}
+                                 desc={`Command project with my colleagues. 
+
+Test account
+email: qwerty1044@mail.ru
+password: 12345678`}
                                  url='https://chshrct.github.io/cards/'/>
                     </Fade>
                     <Fade bottom>
@@ -45,7 +49,11 @@ export const Projects = () => {
                     <Fade right>
                         <Project title={'Social Network'}
                                  style={socialNetwork}
-                                 desc={'an online platform which people use to build social networks'}
+                                 desc={`an online platform which people use to build social networks
+
+Test account
+email: free@samuraijs.com
+password: free`}
                                  url='https://mihagp800.github.io/sn-ts/'/>
                     </Fade>
                 </div>

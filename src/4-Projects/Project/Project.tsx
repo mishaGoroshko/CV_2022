@@ -19,7 +19,7 @@ export const Project: React.FC<ProjectType> = ({title, desc, style, url}) => {
                 </div>
             </div>
             <h3 className={s.title}>{title}</h3>
-            <span className={s.desc}>{desc}</span>
+            <pre className={s.desc}>{desc}</pre>
         </div>
     );
 }
