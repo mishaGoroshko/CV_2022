@@ -25,6 +25,7 @@ input:-webkit-autofill:focus {
     @include flex(column, space-between, center, wrap);
 
     .info {
+      margin-top: 30px;
       width: 100%;
       @include flex(row, space-around, center, wrap);
       //gap: 50px;
@@ -36,10 +37,16 @@ input:-webkit-autofill:focus {
           position: relative;
           @include flex(column, center, flexstart, wrap);
           @include text($primaryColor, 500, 1.25, 20px, capitalize);
+          @media screen and (max-width: 444px) {
+            @include text($primaryColor, 500, 1.25, 15px, capitalize);
+          }
 
           & span:nth-child(3) {
             margin-top: 5px;
             @include text($textColor, 500, 1.25, 25px, none);
+            @media screen and (max-width: 444px) {
+              @include text($textColor, 500, 1.25, 15px, none);
+            }
           }
 
           .emailIcon {
@@ -48,12 +55,22 @@ input:-webkit-autofill:focus {
             position: absolute;
             left: -75px;
             background-color: transparent;
+            @media screen and (max-width: 444px) {
+              height: 30px;
+              width: 30px;
+              left: -35px;
+            }
           }
 
           .phoneIcon {
             height: 55px;
             width: 55px;
             left: -70px;
+            @media screen and (max-width: 444px) {
+              height: 30px;
+              width: 30px;
+              left: -35px;
+            }
           }
         }
       }

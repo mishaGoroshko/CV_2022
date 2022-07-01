@@ -18,8 +18,10 @@ export const Project: React.FC<ProjectType> = ({title, desc, style, url}) => {
                     </button>
                 </div>
             </div>
-            <h3 className={s.title}>{title}</h3>
-            <pre className={s.desc}>{desc}</pre>
+            <div className={s.textBlock}>
+                <h3 className={s.title}>{title}</h3>
+                <pre className={s.desc}>{desc}</pre>
+            </div>
         </div>
     );
 }

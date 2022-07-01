@@ -3,9 +3,13 @@
 
 .project {
   width: 350px;
+  margin: 20px 10px;
   display: flex;
   flex-direction: column;
   background-color: $dgSecondary;
+  @media screen and (max-width: 444px) {
+    width: 320px;
+  }
 
   .imageBlock {
     height: 250px;
@@ -81,19 +85,21 @@
 
     }
   }
+  .textBlock {
+    padding: 15px 10px;
+    .title, .desc {
+      color: #e5e5e5;
+      font-family: jost, sans-serif;
+      font-weight: 500;
+      white-space: pre-wrap;
+    }
 
-  .title, .desc {
-    margin: 5px 5px 0 5px;
-    padding: 0 5px;
-    color: #e5e5e5;
-    font-family: jost, sans-serif;
-    font-weight: 500;
-    white-space: pre-wrap;
+    .title {
+      color: $primaryColor;
+      padding-bottom: 10px;
+    }
   }
 
-  .title {
-    color: $primaryColor;
-  }
 }
 
 

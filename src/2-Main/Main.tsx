@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Main.module.scss'
-import wolf from '../assets/image/ava.png';
+import ava from '../assets/image/ava.png';
 import Particles from 'react-tsparticles';
 import {loadFull} from 'tsparticles';
 import {particlesOptions} from '../assets/Particles/ParticlesOptions';
@@ -14,8 +14,8 @@ import ts from '../assets/icons/ts.svg';
 export const Main = React.memo(
     () => {
 
-        const wolfAva = {
-            backgroundImage: `url(${wolf})`,
+        const myAva = {
+            backgroundImage: `url(${ava})`,
         };
 
         const particlesInit = async (main: any) => {
@@ -34,7 +34,7 @@ export const Main = React.memo(
                         <div className={s.text}>
                             <h3><ReactTypingEffect
                                 text={["Hello, I'm "]}
-                                eraseDelay={10000000}
+                                eraseDelay={5000}
                                 typingDelay={1000}
                                 cursor={' '}
                             /></h3>
@@ -48,7 +48,7 @@ export const Main = React.memo(
                     <Zoom>
                         <Tilt className={s.parallaxEffect} tiltReverse={true}>
                             <div className={s.borderPhoto}/>
-                            <div style={wolfAva} className={s.photo}>
+                            <div style={myAva} className={s.photo}>
                                 <ReactIcon className={s.react} />
                                 <ReduxIcon className={s.redux}/>
                                 <img src={ts} className={s.ts} alt=""/>

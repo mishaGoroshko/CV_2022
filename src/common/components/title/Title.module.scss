@@ -15,6 +15,9 @@
     word-wrap: break-word;
     font-size: 22px;
     text-transform: capitalize;
+    @media screen and (max-width: 444px) {
+      @include text($primaryColor,500,1.25,18px,capitalize);
+    }
   }
 
   h2 {
@@ -25,6 +28,9 @@
     //font-size: 38px;
     //text-transform: capitalize;
     @include text($textColor,500,1.25,38px,capitalize);
+    @media screen and (max-width: 444px) {
+      @include text($textColor,500,1.25,28px,capitalize);
+    }
 
     &::after {
       content: '';

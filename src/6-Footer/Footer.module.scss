@@ -8,7 +8,7 @@
   align-items: center;
 
   .contactsContainer {
-    margin-top: 50px;
+    margin: 50px 0 40px 0;
     @include flex(column, space-between, center, wrap);
     gap: 10px;
 

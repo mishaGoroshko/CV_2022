@@ -17,13 +17,11 @@
       justify-content: space-between;
       align-items: flex-start;
       flex-wrap: wrap;
+      @media screen and (max-width: 1406px) {
+          justify-content: center;
+      }
     }
   }
 }
 
 
-@media screen and (max-width: 671px) {
-  .projects {
-    justify-content: center;
-  }
-}
