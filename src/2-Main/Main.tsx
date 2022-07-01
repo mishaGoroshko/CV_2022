@@ -23,7 +23,7 @@ export const Main = React.memo(
         };
 
         return (
-            <div id='main' className={s.mainBlock}>
+            <article id='main' className={s.mainBlock}>
                 <Particles className={s.particles}
                            id="tsparticles"
                            init={particlesInit}
@@ -58,7 +58,7 @@ export const Main = React.memo(
                     </Zoom>
 
                 </div>
-            </div>
+            </article>
         );
     }
 )

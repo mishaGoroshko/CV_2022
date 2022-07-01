@@ -8,8 +8,8 @@ useEffect(()=>{
 },[isScrolling])
 
     return (
-        <div className={`${s.header} ${isScrolling && s.isScrolling}`}>
+        <header className={`${s.header} ${isScrolling && s.isScrolling}`}>
             <Nav/>
-        </div>
+        </header>
     );
 }

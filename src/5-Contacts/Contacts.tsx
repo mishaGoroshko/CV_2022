@@ -51,7 +51,7 @@ export const Contacts = () => {
 
     const disabledButton = disabled || !!formik.errors.email || !!formik.errors.name || !!formik.errors.message
     return (
-        <div id='contacts' className={s.contactsBlock}>
+        <article id='contacts' className={s.contactsBlock}>
             <div className={s.contactsContainer}>
                 <Title title1={'Contact Me'}
                        title2={'I Will Be Glad To Hear From You'}/>
@@ -126,6 +126,6 @@ export const Contacts = () => {
                     </Fade>
                 </div>
             </div>
-        </div>
+        </article>
     );
 }

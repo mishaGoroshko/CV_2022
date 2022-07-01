@@ -23,7 +23,7 @@ export const Projects = () => {
 
     return (
         <div className={s.projectsBlock}>
-            <div id='projects' className={s.projectsContainer}>
+            <article id='projects' className={s.projectsContainer}>
 
                 <Title title1={'Portfolio'}
                        title2={'My Amazing Works'}/>
@@ -89,7 +89,7 @@ password: free`}
                     </Fade>
                 </div>
 
-            </div>
+            </article>
         </div>
     );
 }

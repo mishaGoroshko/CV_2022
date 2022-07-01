@@ -33,7 +33,7 @@ export const Skills = () => {
     }, []);
 
     return (
-        <div id='skills' className={s.skillsBlock}>
+        <article id='skills' className={s.skillsBlock}>
             <div className={s.skillsContainer}>
                 <Title title1={'develop is life'}
                        title2={'I Develop Skills Regularly to Keep Me Update'}/>
@@ -144,6 +144,6 @@ export const Skills = () => {
 
                 </div>
             </div>
-        </div>
+        </article>
     );
 }

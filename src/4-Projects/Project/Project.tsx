@@ -10,7 +10,7 @@ type ProjectType = {
 
 export const Project: React.FC<ProjectType> = ({title, desc, style, url}) => {
     return (
-        <div className={s.project}>
+        <section className={s.project}>
             <div className={s.imageBlock}>
                 <div className={s.image} style={style}>
                     <button className={s.button} type="button"
@@ -18,10 +18,10 @@ export const Project: React.FC<ProjectType> = ({title, desc, style, url}) => {
                     </button>
                 </div>
             </div>
-            <div className={s.textBlock}>
+            <aside className={s.textBlock}>
                 <h3 className={s.title}>{title}</h3>
                 <pre className={s.desc}>{desc}</pre>
-            </div>
-        </div>
+            </aside>
+        </section>
     );
 }

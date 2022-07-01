@@ -10,10 +10,10 @@ import github from '../assets/icons/github.png';
 export const Footer = () => {
     return (
         <footer className={s.contactsBlock}>
-            <div className={s.contactsContainer}>
+            <article className={s.contactsContainer}>
                 <Title title1={'Developed with love'}
                        title2={'by Misha Haroshko'}/>
-                <div className={s.iconsBlock}>
+                <figure className={s.iconsBlock}>
                     <a href='https://t.me/MixaGP' target="_blank">
                         <img src={telegram} className={s.icon}
                              alt='telegram'/></a>
@@ -28,9 +28,9 @@ export const Footer = () => {
                         <img src={github}
                              className={`${s.icon} ${s.github}`}
                              alt='github'/></a>
-                </div>
+                </figure>
                 <div className={s.info}>© 2022</div>
-            </div>
+            </article>
         </footer>
     );
 }
