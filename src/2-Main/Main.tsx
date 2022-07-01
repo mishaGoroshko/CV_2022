@@ -38,7 +38,7 @@ export const Main = React.memo(
                                 typingDelay={1000}
                                 cursor={' '}
                             /></h3>
-                            <h2>Misha Haroshko</h2>
+                            <h2>Misha Goroshko</h2>
                             <p>A <span
                                 className={s.greenText}>Frontend Developer</span> From <span
                                 className={s.yellowText}>Minsk&...</span>
