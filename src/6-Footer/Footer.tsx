@@ -12,7 +12,7 @@ export const Footer = () => {
         <footer className={s.contactsBlock}>
             <article className={s.contactsContainer}>
                 <Title title1={'Developed with love'}
-                       title2={'by Misha Haroshko'}/>
+                       title2={'by Misha Goroshko'}/>
                 <figure className={s.iconsBlock}>
                     <a href='https://t.me/MixaGP' target="_blank">
                         <img src={telegram} className={s.icon}

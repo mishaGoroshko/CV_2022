@@ -41,7 +41,7 @@ export const Projects = () => {
 
 Positions: Software Engineer 
 
-Overall Team Size: 1 PM, 1 Back-end developer, 4 Front-end-developer
+Overall Team Size: 1 PM, 1 Back-end developer, 4 Front-end-developers
 
 Responsibilities: Functional development
 
@@ -64,7 +64,7 @@ Overall Team Size: 1 PM, 1 developer
 
 Responsibilities: Functional development
 
-Tools & Technologies: React, Redux Toolkit, TypeScript, Unit Tests, StoryBook, HTML, CSS, Git, Rest API
+Tools & Technologies: React, Redux Toolkit, Redux-Saga, TypeScript, Unit Tests, StoryBook, HTML, CSS, Git, Rest API
 
 
 Test account
@@ -83,7 +83,7 @@ Overall Team Size: 1 developer
 
 Responsibilities: Functional development
 
-Tools & Technologies: React, Redux, TypeScript, HTML, CSS, Styled Component, Git, Rest API`}
+Tools & Technologies: React, Redux, TypeScript, HTML, CSS, Styled Components, Git, Rest API`}
                                  url='https://mihagp800.github.io/countries/'/>
                     </Fade>
 {/*                    <Fade right>*/}
