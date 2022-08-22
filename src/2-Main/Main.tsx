@@ -41,7 +41,7 @@ export const Main = React.memo(
                             <h2>Misha Goroshko</h2>
                             <p>A <span
                                 className={s.greenText}>Frontend Developer</span> From <span
-                                className={s.yellowText}>Minsk&...</span>
+                                className={s.yellowText}>Minsk&Poland</span>
                             </p>
                         </div>
                     </Zoom>

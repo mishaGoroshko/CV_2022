@@ -100,11 +100,11 @@ export const Contacts = () => {
                             </div>
 
                             <div className={s.inputBlock}>
-                        <textarea className={s.input}
-                                  placeholder=" "
-                                  id="message"
-                                  {...formik.getFieldProps('message')}
-                        />
+                                <textarea className={s.input}
+                                          placeholder=" "
+                                          id="message"
+                                          {...formik.getFieldProps('message')}
+                                />
                                 {formik.touched.message && formik.errors.message ? (
                                     <div className={s.error}>{formik.errors.message}</div>
                                 ) : null}

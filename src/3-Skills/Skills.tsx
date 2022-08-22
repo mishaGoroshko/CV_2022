@@ -78,7 +78,7 @@ export const Skills = () => {
                                 className={`${s.greenLine} ${isLanguages && s.html}`}></span><em>HTML</em>
                             </li>
                             <li><span
-                                className={`${s.greenLine} ${isLanguages && s.css}`}></span><em>CSS/SCSS/SASS</em>
+                                className={`${s.greenLine} ${isLanguages && s.css}`}></span><em>CSS/SCSS/SASS/Styled</em>
                             </li>
                             <li><span
                                 className={`${s.greenLine} ${isLanguages && s.english}`}></span><em>english(A2)</em>
@@ -139,6 +139,12 @@ export const Skills = () => {
                                     className={`${s.redLine} ${isHardSkills && s.react}`}/>
                                 <em>redux-thunk</em>
                             </li>
+                            <li>
+                                <span
+                                    className={`${s.redLine} ${isHardSkills && s.materialUI}`}/>
+                                <em>redux-saga</em>
+                            </li>
+
                         </ul>
                     </div>
 
