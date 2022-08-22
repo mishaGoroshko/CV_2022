@@ -3,10 +3,10 @@ import s from './Projects.module.scss'
 import {Project} from './Project/Project';
 import {Title} from '../common/components/title/Title';
 import socNet from '../assets/image/socialNetwork.jpg'
+import country from '../assets/image/country.jpg'
 import todo from '../assets/image/todolist.png'
 import card from '../assets/image/card.png'
 import Fade from 'react-reveal/Fade';
-
 
 export const Projects = () => {
     const socialNetwork = {
@@ -15,6 +15,10 @@ export const Projects = () => {
 
     const todolist = {
         backgroundImage: `url(${todo})`,
+    };
+
+    const countries = {
+        backgroundImage: `url(${country})`,
     };
 
     const memoryCard = {
@@ -27,6 +31,7 @@ export const Projects = () => {
 
                 <Title title1={'Portfolio'}
                        title2={'My Amazing Works'}/>
+
 
                 <div className={s.projects}>
                     <Fade left>
@@ -67,26 +72,39 @@ email: free@samuraijs.com
 password: free`}
                                  url='https://mihagp800.github.io/todoList/'/>
                     </Fade>
-
                     <Fade right>
-                        <Project title={'Social Network'}
-                                 style={socialNetwork}
-                                 desc={`Project Description: an online platform which people use to build social networks
+                        <Project title={'Countries'}
+                                 style={countries}
+                                 desc={`Project Description: information application about all countries in the world
 
 Positions: Junior Software Engineer 
 
-Overall Team Size: 1 PM, 1 developer
+Overall Team Size: 1 developer
 
 Responsibilities: Functional development
 
-Tools & Technologies: React, Redux, TypeScript, HTML, CSS, Git, Rest API
-
-
-Test account
-email: free@samuraijs.com
-password: free`}
-                                 url='https://mihagp800.github.io/sn-ts/'/>
+Tools & Technologies: React, Redux, TypeScript, HTML, CSS, Styled Component, Git, Rest API`}
+                                 url='https://mihagp800.github.io/countries/'/>
                     </Fade>
+{/*                    <Fade right>*/}
+{/*                        <Project title={'Social Network'}*/}
+{/*                                 style={socialNetwork}*/}
+{/*                                 desc={`Project Description: an online platform which people use to build social networks*/}
+
+{/*Positions: Junior Software Engineer */}
+
+{/*Overall Team Size: 1 PM, 1 developer*/}
+
+{/*Responsibilities: Functional development*/}
+
+{/*Tools & Technologies: React(with class components), Redux, TypeScript, HTML, CSS, Git, Rest API*/}
+
+
+{/*Test account*/}
+{/*email: free@samuraijs.com*/}
+{/*password: free`}*/}
+{/*                                 url='https://mihagp800.github.io/sn-ts/'/>*/}
+{/*                    </Fade>*/}
                 </div>
 
             </article>

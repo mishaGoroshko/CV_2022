@@ -34,7 +34,7 @@ export const Main = React.memo(
                         <div className={s.text}>
                             <h3><ReactTypingEffect
                                 text={["Hello, I'm "]}
-                                eraseDelay={5000}
+                                eraseDelay={1000}
                                 typingDelay={1000}
                                 cursor={' '}
                             /></h3>
