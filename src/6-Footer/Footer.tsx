@@ -11,7 +11,7 @@ export const Footer = () => {
     return (
         <footer className={s.contactsBlock}>
             <article className={s.contactsContainer}>
-                <Title title1={'Developed with love'}
+                <Title title1={'Developed'}
                        title2={'by Misha Goroshko'}/>
                 <figure className={s.iconsBlock}>
                     <a href='https://t.me/MixaGP' target="_blank">

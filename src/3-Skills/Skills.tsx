@@ -35,8 +35,8 @@ export const Skills = () => {
     return (
         <article id='skills' className={s.skillsBlock}>
             <div className={s.skillsContainer}>
-                <Title title1={'develop is life'}
-                       title2={'I Develop Skills Regularly to Keep Me Update'}/>
+                <Title title1={'development is life'}
+                       title2={'I improve my skills regularly to be at my best'}/>
 
                 <div className={s.container}>
 

@@ -54,7 +54,7 @@ export const Contacts = () => {
         <article id='contacts' className={s.contactsBlock}>
             <div className={s.contactsContainer}>
                 <Title title1={'Contact Me'}
-                       title2={'I Will Be Glad To Hear From You'}/>
+                       title2={'looking forward to seeing you'}/>
                 <div className={s.info}>
                     <Fade bottom>
                         <div className={s.addressBlock}>
