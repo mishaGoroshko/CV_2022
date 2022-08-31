@@ -17,7 +17,7 @@ export const Footer = () => {
                     <a href='https://t.me/MixaGP' target="_blank">
                         <img src={telegram} className={s.icon}
                              alt='telegram'/></a>
-                    <a href="viber://chat?number=%2B375299077908" target="_blank">
+                    <a href="viber://chat?number=%2B375259077908" target="_blank">
                         <img src={viber}
                              className={s.icon}
                              alt='viber'/></a>
