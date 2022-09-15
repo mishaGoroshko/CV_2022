@@ -81,7 +81,7 @@ export const Skills = () => {
                                 className={`${s.greenLine} ${isLanguages && s.css}`}></span><em>CSS/SCSS/SASS/Styled</em>
                             </li>
                             <li><span
-                                className={`${s.greenLine} ${isLanguages && s.english}`}></span><em>english(A2)</em>
+                                className={`${s.greenLine} ${isLanguages && s.english}`}></span><em>english(B1)</em>
                             </li>
                         </ul>
                     </div>
